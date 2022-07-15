@@ -6,6 +6,7 @@ public class PlayerStateReload : PlayerState
     public override IEnumerator EnterState(Player player)
     {
         player.SetMaterialColor(new Color(1.0f, 1.0f, 1.0f));
+        
         player.managerUI.UpdateStateString("Reload");
 
         player.Animator.SetTrigger("T_Reload");

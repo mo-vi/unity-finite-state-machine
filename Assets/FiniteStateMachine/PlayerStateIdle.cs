@@ -6,6 +6,7 @@ public class PlayerStateIdle : PlayerState
     public override IEnumerator EnterState(Player player)
     {
         player.SetMaterialColor(new Color(0.34f, 0.68f, 0.75f));
+        
         player.managerUI.UpdateStateString("Idle");
 
         /* Reset rotation if the player was spinning */
@@ -45,11 +46,5 @@ public class PlayerStateIdle : PlayerState
 
             player.TransitionToState(player.StateReload);
         }
-
-        ///* If you press and release duck button fast enough*/
-        //if (player.Animator.GetCurrentAnimatorStateInfo(0).IsName("Duck") && !Input.GetButton("Duck"))
-        //{
-        //    //player.Animator.SetTrigger("T_Idle");
-        //}
     }
 }

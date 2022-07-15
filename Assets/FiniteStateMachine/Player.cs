@@ -6,10 +6,10 @@ public class Player : MonoBehaviour
     int currentAmmo = 0;
 
     public int MaxAmmo { get { return maxAmmo; }}
-    readonly int maxAmmo = 20;
+    int maxAmmo = 20;
 
     public float JumpForce { get { return jumpForce; }}
-    readonly float jumpForce = 350.0f;
+    float jumpForce = 350.0f;
 
     [Header("Mesh renderer to recolor:"), SerializeField] private Renderer meshRenderer;
 

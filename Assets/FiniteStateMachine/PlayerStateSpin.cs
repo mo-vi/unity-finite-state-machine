@@ -6,6 +6,7 @@ public class PlayerStateSpin : PlayerState
     public override IEnumerator EnterState(Player player)
     {
         player.SetMaterialColor(new Color(0.10f, 0.10f, 0.10f));
+        
         player.managerUI.UpdateStateString("Spin");
 
         yield break;

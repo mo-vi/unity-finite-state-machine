@@ -6,6 +6,7 @@ public class PlayerStateDuck : PlayerState
     public override IEnumerator EnterState(Player player)
     {
         player.SetMaterialColor(new Color(0.93f, 0.86f, 0.34f));
+        
         player.managerUI.UpdateStateString("Duck");
 
         player.Animator.SetTrigger("T_Duck");
